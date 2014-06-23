@@ -237,7 +237,7 @@ class Video_class(object):
         #fourcc = cv2.cv.CV_FOURCC('D','I','V','X')
         fourcc = cv2.cv.CV_FOURCC('M','P','V','4')
         #fourcc = cv2.cv.CV_FOURCC('M','P','E','G')
-        out = cv2.VideoWriter(self.video_path + '.mp4',fourcc, 50, (self.width,self.height))
+        out = cv2.VideoWriter(self.video_path + '.avi',fourcc, 50, (self.width,self.height))
 
         #if self.rank == 0:
         print "Making a movie, I am rank: ", self.rank
